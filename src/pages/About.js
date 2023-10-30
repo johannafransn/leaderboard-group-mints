@@ -39,7 +39,7 @@ export default function About({ propsHere }) {
                   {" "}
                   support@liquality.io
                 </a>{" "}
-                and I will get back to you as soon as possible.
+                and we will get back to you as soon as possible.
               </p>
             </div>
           </div>
