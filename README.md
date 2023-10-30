@@ -1,21 +1,7 @@
-# Whats this?
+# About This Repository
 
-Web3-mailchimp MVP
+A simple app showing rates on a table. Users can choose to update rates every 5, 10 or 15 seconds.
 
-## Run project locally
-
-```bash
-yarn && yarn start
-```
-
-## Environment Variables
-
-To run this project, you will need to add environment variables. Check the `.env.example` file for all the environment variables required and add it to `.env` file or set them up on your hosting provider.
-
-### Deploy to IPFS
-
-Deploy a copy of your application to IPFS using the following command:
-
-```bash
-yarn deploy
-```
+# How To Run This Project On Your Local Machine
+1. In root folder: Install all dependencies with `npm install`
+2. In /table-api: Start the development server server via `npm start`.

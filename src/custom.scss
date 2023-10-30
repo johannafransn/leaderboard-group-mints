@@ -1,0 +1,16 @@
+$green-dark: #a06ffb;
+$green-light: #cfe383;
+
+$theme-colors: (
+  "primary": #a06ffb,
+  "danger": #aa0b02,
+);
+
+.btn {
+  color: #fff !important;
+}
+
+$primary: $green-dark;
+$btn-border-radius: 30px;
+
+@import "~bootstrap/scss/bootstrap.scss";
