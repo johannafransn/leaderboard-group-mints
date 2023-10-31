@@ -1,20 +1,20 @@
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export function useGetLeaderboardContract1() {
-  const [leaderboardContract1, setLeaderboardContract1] = useState(null);
+export function useGetSoundLeaderboard(contractAddress) {
+  const [soundLeaderboard, setSoundLeaderboard] = useState(null);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const fetchGroups = async () => {
       try {
-        if (!leaderboardContract1) {
+        if (!soundLeaderboard) {
           setLoading(true);
-          const liveUrl =
-            "https://group-mints-backend.onrender.com/v1/zora/leaderboard/";
+          const liveUrl = `https://group-mints-backend.onrender.com/v1/sound/leaderboard/${contractAddress}`;
           const res = await fetch(liveUrl);
           const data = await res.json();
           console.log(data, "DAATAAA");
-          setLeaderboardContract1(data);
+          setSoundLeaderboard(data);
           setLoading(false);
         }
       } catch (error) {
@@ -22,8 +22,8 @@ export function useGetLeaderboardContract1() {
       }
     };
     fetchGroups();
-  }, [leaderboardContract1]);
-  return { leaderboardContract1, loading };
+  }, [soundLeaderboard]);
+  return { leaderboardContract1: soundLeaderboard, loading };
 }
 
-export default useGetLeaderboardContract1;
+export default useGetSoundLeaderboard;

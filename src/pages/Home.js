@@ -19,15 +19,18 @@ export default function Home({ propsHere }) {
     <div className="container">
       <div className="row my-3 my-sm-5">
         <div className="col-sm-9 article-content">
-          <h1>See all Leaderboards</h1>
-
           <div id="ember41" className="ember-view">
             <p>
-              Which leaderboard do you want to see?
+              <h1>Leaderboards</h1>
               <br></br>
-              <a href="/#/contract/2">Sound TK Mint Leaderboard on Optimism</a>
+              <div className="frame"></div>
+              <a href="/#/contract/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076">
+                Sound 'Honey' on Optimism
+              </a>
               <br></br>
-              <a href="/#/contract/1">Zora Rapper J on Base</a>
+              <a href="/#/contract/0xfcf069b5876ab35107e44906933cf67110a60bcd">
+                Sound 'Breathe' on Optimism
+              </a>
             </p>
           </div>
         </div>
@@ -35,3 +38,14 @@ export default function Home({ propsHere }) {
     </div>
   );
 }
+
+/*   The Keepers - Base : // interested in mintReferal
+  https://basescan.org/address/0xbd87f4da73ff92a7bea31e2de20e14f9829f42fe
+  
+Honey - Optimism: 
+Song contract - https://optimistic.etherscan.io/address/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076
+  
+  
+Breathe  - Optimism: 
+Song contract: https://optimistic.etherscan.io/address/0xfcf069b5876ab35107e44906933cf67110a60bcd
+  */
