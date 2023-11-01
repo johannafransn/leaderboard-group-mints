@@ -14,7 +14,9 @@ export default function Table({ leaderboardData }) {
           <tr key={index}>
             <td>{item.minter}</td>
             <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
-            <td style={{ textAlign: "right" }}>{item.topContributor} ...</td>
+            <td style={{ textAlign: "right" }}>?</td>
+
+            <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
           </tr>
         );
       });
@@ -36,7 +38,9 @@ export default function Table({ leaderboardData }) {
           <tr>
             <th style={{ textAlign: "left" }}>Minter</th>
             <th style={{ textAlign: "right" }}>Number of Mints</th>
-            <th style={{ textAlign: "right" }}>Top Contributor</th>
+            <th style={{ textAlign: "right" }}>Referrals</th>
+
+            <th style={{ textAlign: "right" }}>Score</th>
           </tr>
         </thead>
         <tbody>{_renderRows()}</tbody>
