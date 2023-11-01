@@ -15,6 +15,7 @@ export function useGetSoundLeaderboard(contractAddress, platform) {
           const res = await fetch(liveUrl);
           const data = await res.json();
           console.log(data, "DAATAAA");
+
           setLeaderboardData(data);
           setLoading(false);
         }
