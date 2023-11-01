@@ -21,7 +21,7 @@ export default function Home({ propsHere }) {
         <div className="col-sm-9 article-content">
           <div id="ember41" className="ember-view">
             <p>
-              <h1>Leaderboards</h1>
+              <h1>Honey Pot Leaderboards</h1>
               <br></br>
               <div className="frame"></div>
               <a href="/#/contract/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076">

@@ -5,7 +5,7 @@ export default function About({ propsHere }) {
         <div className="col-12">
           <div className="card">
             <div className="card-body">
-              <h5>Leaderboard</h5>
+              <h5>Honey Pot Leaderboards</h5>
               <p>
                 These are the Honey Pot Leaderboards. Created by Liquality,
                 Honey Pots allows creators to share with their supporters,
