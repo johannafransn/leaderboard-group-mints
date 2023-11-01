@@ -5,6 +5,8 @@ import About from "./pages/About";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Contract from "./pages/Contract";
+import dotenv from "dotenv";
+dotenv.config();
 
 function App() {
   return (

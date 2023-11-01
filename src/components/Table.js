@@ -32,7 +32,6 @@ export default function Table({ leaderboardData }) {
     return minterNames[minter] || minter;
   };
 
-  console.log(leaderboardData, "leaderboardocntrct");
   const _renderRows = () => {
     let rows = [];
     if (leaderboardData && leaderboardData?.length > 0) {

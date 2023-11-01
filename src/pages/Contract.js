@@ -6,7 +6,6 @@ import { useEffect } from "react";
 export default function Contract({ propsHere }) {
   const { contractAddress, platform } = useParams();
 
-  console.log(contractAddress, "contract");
   const { leaderboardData, loading } = useGetSoundLeaderboard(
     contractAddress,
     platform

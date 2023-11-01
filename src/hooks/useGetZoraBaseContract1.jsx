@@ -9,12 +9,10 @@ export function useGetSoundLeaderboard(contractAddress, platform) {
     const fetchGroups = async () => {
       try {
         if (!leaderboardData) {
-          console.log("Coming here");
           setLoading(true);
           const liveUrl = `https://group-mints-backend.onrender.com/v1/${platform}/leaderboard/${contractAddress}`;
           const res = await fetch(liveUrl);
           const data = await res.json();
-          console.log(data, "DAATAAA");
 
           setLeaderboardData(data);
           setLoading(false);
