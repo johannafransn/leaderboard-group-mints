@@ -14,9 +14,13 @@ export default function Table({ leaderboardData }) {
           <tr key={index}>
             <td>{item.minter}</td>
             <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
-            <td style={{ textAlign: "right" }}>?</td>
+            <td style={{ textAlign: "right" }}>
+              {item.referrals === 0 || item.referrals ? item.referrals : "?"}
+            </td>
 
-            <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
+            <td style={{ textAlign: "right" }}>
+              {item.score.toString().slice(0, 3)}
+            </td>
           </tr>
         );
       });

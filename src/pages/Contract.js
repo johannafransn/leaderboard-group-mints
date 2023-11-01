@@ -1,13 +1,18 @@
 import { useParams } from "react-router-dom";
 import Table from "../components/Table";
 import useGetSoundLeaderboard from "../hooks/useGetZoraBaseContract1";
+import { useEffect } from "react";
 
 export default function Contract({ propsHere }) {
-  const { contractAddress } = useParams();
+  const { contractAddress, platform } = useParams();
 
   console.log(contractAddress, "contract");
-  const { leaderboardContract1, loading } =
-    useGetSoundLeaderboard(contractAddress);
+  const { leaderboardData, loading } = useGetSoundLeaderboard(
+    contractAddress,
+    platform
+  );
+
+  useEffect(() => {}, [leaderboardData]);
 
   return (
     <div className="container">
@@ -23,7 +28,7 @@ export default function Contract({ propsHere }) {
           </a>
           <br></br> <br></br>
           <div id="ember41" className="ember-view">
-            <Table leaderboardData={leaderboardContract1}></Table>
+            <Table leaderboardData={leaderboardData}></Table>
           </div>
         </div>
       </div>
