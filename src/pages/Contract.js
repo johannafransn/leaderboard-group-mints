@@ -21,7 +21,11 @@ export default function Contract({ propsHere }) {
           <br></br>
           <a
             target="_blank"
-            href={`https://optimistic.etherscan.io/address/${contractAddress}`}
+            href={
+              platform === "zora"
+                ? `https://basescan.org/address/${contractAddress}`
+                : `https://optimistic.etherscan.io/address/${contractAddress}`
+            }
           >
             See minting contract details
           </a>
