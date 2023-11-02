@@ -37,21 +37,21 @@ export default function Home({ propsHere }) {
                 <div className="flexDirectionRow justify-center mb-3">
                   <a
                     className="btn btn-primary  homeBtnGroup"
-                    href="/#/contract/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076/sound"
+                    href="/#/contract/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076/Honey/sound"
                   >
                     'Honey' on Optimism
                   </a>
 
                   <a
                     className="btn btn-primary  homeBtnGroup"
-                    href="/#/contract/0xfcf069b5876ab35107e44906933cf67110a60bcd/sound"
+                    href="/#/contract/0xfcf069b5876ab35107e44906933cf67110a60bcd/Breathe/sound"
                   >
                     'Breathe' on Optimism
                   </a>
 
                   <a
                     className="btn btn-primary  homeBtnGroup"
-                    href="/#/contract/0x6a7463c342027ee8452f2686ccfa9b73026b4095/sound"
+                    href="/#/contract/0x6a7463c342027ee8452f2686ccfa9b73026b4095/Break It/sound"
                   >
                     'Break It - msft (VividFeverDreams Flip)' on Optimism
                   </a>
@@ -59,7 +59,7 @@ export default function Home({ propsHere }) {
                 <div className="flexDirectionRow justify-center mb-3">
                   <a
                     className="btn btn-primary  "
-                    href="/#/contract/0xbd87f4da73ff92a7bea31e2de20e14f9829f42fe/zora"
+                    href="/#/contract/0xbd87f4da73ff92a7bea31e2de20e14f9829f42fe/The Keepers/zora"
                   >
                     'The Keepers' - on Base
                   </a>

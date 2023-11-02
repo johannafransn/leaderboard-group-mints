@@ -4,7 +4,7 @@ import useGetSoundLeaderboard from "../hooks/useGetZoraBaseContract1";
 import { useEffect } from "react";
 
 export default function Contract({ propsHere }) {
-  const { contractAddress, platform } = useParams();
+  const { contractAddress, platform, title } = useParams();
 
   const { leaderboardData, loading } = useGetSoundLeaderboard(
     contractAddress,
@@ -17,7 +17,7 @@ export default function Contract({ propsHere }) {
     <div className="container">
       <div className="row my-3 my-sm-5">
         <div className="col-sm-9 article-content">
-          <h1>Leaderboard </h1>
+          <h1>{title} Top Contributor Leaderboard </h1>
           <br></br>
           <a
             target="_blank"
