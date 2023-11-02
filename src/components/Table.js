@@ -64,19 +64,17 @@ export default function Table({ leaderboardData }) {
   };
 
   return (
-    <div>
-      <table className="table">
-        <thead>
-          <tr>
-            <th style={{ textAlign: "left" }}>Minter</th>
-            <th style={{ textAlign: "right" }}>Number of Mints</th>
-            <th style={{ textAlign: "right" }}>Referrals</th>
+    <table className="table table-dark">
+      <thead>
+        <tr>
+          <th style={{ textAlign: "left" }}>Minter</th>
+          <th style={{ textAlign: "right" }}>Number of Mints</th>
+          <th style={{ textAlign: "right" }}>Referrals</th>
 
-            <th style={{ textAlign: "right" }}>Score</th>
-          </tr>
-        </thead>
-        <tbody>{_renderRows()}</tbody>
-      </table>
-    </div>
+          <th style={{ textAlign: "right" }}>Score</th>
+        </tr>
+      </thead>
+      <tbody>{_renderRows()}</tbody>
+    </table>
   );
 }

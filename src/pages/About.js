@@ -1,10 +1,10 @@
 export default function About({ propsHere }) {
   return (
-    <div className="container py-5">
-      <div className="row">
+    <div className="container py-5 backgroundDark">
+      <div className="row backgroundDark">
         <div className="col-12">
           <div className="card">
-            <div className="card-body">
+            <div className="card-body backgroundDark">
               <h5>Honey Pot Leaderboards</h5>
               <p>
                 These are the Honey Pot Leaderboards. Created by Liquality,

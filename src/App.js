@@ -10,7 +10,7 @@ dotenv.config();
 
 function App() {
   return (
-    <body className="d-flex flex-column min-vh-100">
+    <body className="d-flex flex-column min-vh-100 backgroundDark">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -6,6 +6,20 @@ $theme-colors: (
   "danger": #aa0b02,
 );
 
+p {
+  color: white;
+}
+h1 {
+  color: white !important;
+}
+
+.backgroundDark {
+  background-color: #212529;
+}
+
+h5 {
+  color: white !important;
+}
 .btn {
   color: #fff !important;
 }

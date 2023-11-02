@@ -30,9 +30,7 @@ export default function Contract({ propsHere }) {
             See minting contract details
           </a>
           <br></br> <br></br>
-          <div id="ember41" className="ember-view">
-            <Table leaderboardData={leaderboardData}></Table>
-          </div>
+          <Table leaderboardData={leaderboardData}></Table>
         </div>
       </div>
     </div>
