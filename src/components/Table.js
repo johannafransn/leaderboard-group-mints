@@ -47,7 +47,7 @@ export default function Table({ leaderboardData }) {
             <td style={{ textAlign: "right" }}>
               {item.score
                 ? item.score.toString().slice(0, 3)
-                : (item.numberOfMints * 0.3).toString().slice(0, 3)}
+                : (item.numberOfMints * 0.7).toString().slice(0, 3)}
             </td>
           </tr>
         );

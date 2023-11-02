@@ -15,7 +15,6 @@ export default function Home({ propsHere }) {
           >
             {}
             <span className="webfont -mb-1"></span>
-            <span className="artistName">Brää</span>
           </div>
         </button>
       </div>
@@ -40,21 +39,21 @@ export default function Home({ propsHere }) {
                     className="btn btn-primary  homeBtnGroup"
                     href="/#/contract/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076/sound"
                   >
-                    Song 'Honey' on Optimism
+                    'Honey' on Optimism
                   </a>
 
                   <a
                     className="btn btn-primary  homeBtnGroup"
                     href="/#/contract/0xfcf069b5876ab35107e44906933cf67110a60bcd/sound"
                   >
-                    Song 'Breathe' on Optimism
+                    'Breathe' on Optimism
                   </a>
 
                   <a
                     className="btn btn-primary  homeBtnGroup"
                     href="/#/contract/0x6a7463c342027ee8452f2686ccfa9b73026b4095/sound"
                   >
-                    Song 'Break It - msft (VividFeverDreams Flip)' on Optimism
+                    'Break It - msft (VividFeverDreams Flip)' on Optimism
                   </a>
                 </div>{" "}
                 <div className="flexDirectionRow justify-center mb-3">
@@ -62,7 +61,7 @@ export default function Home({ propsHere }) {
                     className="btn btn-primary  "
                     href="/#/contract/0xbd87f4da73ff92a7bea31e2de20e14f9829f42fe/zora"
                   >
-                    Song 'The Keepers' - on Base
+                    'The Keepers' - on Base
                   </a>
                 </div>
               </div>
