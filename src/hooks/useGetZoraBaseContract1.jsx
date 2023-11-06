@@ -9,7 +9,7 @@ export function useGetSoundLeaderboard(contractAddress, platform) {
       try {
         if (!leaderboardData) {
           setLoading(true);
-          const liveUrl = `https://group-mints-backend.onrender.com//v1/nft/leaderboard/${platform}/${contractAddress}`;
+          const liveUrl = `https://group-mints-backend.onrender.com/v1/nft/leaderboard/${platform}/${contractAddress}`;
           const res = await fetch(liveUrl);
           const data = await res.json();
 
