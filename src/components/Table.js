@@ -38,17 +38,22 @@ export default function Table({ leaderboardData }) {
       rows = leaderboardData.map((item, index) => {
         return (
           <tr key={index}>
-            <td>{renderMinterName(item.minter)}</td>
-            <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
-            <td style={{ textAlign: "right" }}>
-              {item.referrals === 0 || item.referrals ? item.referrals : "?"}
-            </td>
-
-            <td style={{ textAlign: "right" }}>
-              {item.score
-                ? item.score.toString().slice(0, 3)
-                : (item.numberOfMints * 0.7).toString().slice(0, 3)}
-            </td>
+            {renderMinterName(item.minter) === "bonfire.eth" ? null : (
+              <>
+                <td>{renderMinterName(item.minter)}</td>
+                <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
+                <td style={{ textAlign: "right" }}>
+                  {item.referrals === 0 || item.referrals
+                    ? item.referrals
+                    : "?"}
+                </td>
+                <td style={{ textAlign: "right" }}>
+                  {item.score
+                    ? item.score.toString().slice(0, 3)
+                    : (item.numberOfMints * 0.7).toString().slice(0, 3)}
+                </td>
+              </>
+            )}
           </tr>
         );
       });

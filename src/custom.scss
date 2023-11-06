@@ -14,7 +14,7 @@ h1 {
 }
 
 .backgroundDark {
-  background-color: #212529;
+  background-color: #000000;
 }
 
 h5 {
@@ -39,6 +39,10 @@ $btn-border-radius: 30px;
 
 .homeBtnGroup {
   margin-right: 15px;
+}
+
+.table-dark {
+  --bs-table-bg: black !important;
 }
 
 @import "~bootstrap/scss/bootstrap.scss";

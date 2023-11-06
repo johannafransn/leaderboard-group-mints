@@ -8,7 +8,7 @@ const Navbar = () => {
           <a className="navbar-brand" href="/">
             <img
               height="20"
-              src="https://uploads-ssl.webflow.com/63e610c62d73bd54e8ee8455/63e610c62d73bd46ffee8583_Liquality_logo.svg"
+              src="https://docs.liquality.io/img/logo_dark.svg"
               alt="nav"
             />{" "}
           </a>

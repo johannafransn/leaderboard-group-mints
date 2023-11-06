@@ -17,7 +17,7 @@ export default function Contract({ propsHere }) {
     <div className="container">
       <div className="row my-3 my-sm-5">
         <div className="col-sm-9 article-content">
-          <h1>{title} Top Contributor Leaderboard </h1>
+          <h1>{title} - Top Contributor Leaderboard </h1>
           <br></br>
           <a
             target="_blank"
