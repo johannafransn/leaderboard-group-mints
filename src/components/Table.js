@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { fetchEverynameName } from "../helper";
+import { useParams } from "react-router-dom";
 
 export default function Table({ leaderboardData }) {
   //Fetch on mounting component
@@ -7,6 +8,7 @@ export default function Table({ leaderboardData }) {
   useEffect(() => {}, [leaderboardData]);
 
   const [minterNames, setMinterNames] = useState({});
+  const { contractAddress, platform, title } = useParams();
 
   useEffect(() => {
     if (leaderboardData && leaderboardData.length > 0) {
@@ -36,9 +38,14 @@ export default function Table({ leaderboardData }) {
     let rows = [];
     if (leaderboardData && leaderboardData?.length > 0) {
       rows = leaderboardData.map((item, index) => {
+        let dontShowPetesMint =
+          title === "Honey" &&
+          renderMinterName(item.minter) === "p3t3rango.eth";
+
         return (
           <tr key={index}>
-            {renderMinterName(item.minter) === "bonfire.eth" ? null : (
+            {renderMinterName(item.minter) === "bonfire.eth" ||
+            dontShowPetesMint ? null : (
               <>
                 <td>{renderMinterName(item.minter)}</td>
                 <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
