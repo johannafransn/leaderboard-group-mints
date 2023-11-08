@@ -44,8 +44,7 @@ export default function Table({ leaderboardData }) {
 
         return (
           <tr key={index}>
-            {renderMinterName(item.minter) === "bonfire.eth" ||
-            dontShowPetesMint ? null : (
+            {renderMinterName(item.minter) === "bonfire.eth" ? null : (
               <>
                 <td>{renderMinterName(item.minter)}</td>
                 <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
