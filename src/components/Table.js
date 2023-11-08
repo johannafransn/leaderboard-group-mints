@@ -39,12 +39,13 @@ export default function Table({ leaderboardData }) {
     if (leaderboardData && leaderboardData?.length > 0) {
       rows = leaderboardData.map((item, index) => {
         let dontShowPetesMint =
-          title === "Honey" &&
+          // title === "Honey" &&
           renderMinterName(item.minter) === "p3t3rango.eth";
 
         return (
           <tr key={index}>
-            {renderMinterName(item.minter) === "bonfire.eth" ? null : (
+            {renderMinterName(item.minter) === "bonfire.eth" ||
+            dontShowPetesMint ? null : (
               <>
                 <td>{renderMinterName(item.minter)}</td>
                 <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
