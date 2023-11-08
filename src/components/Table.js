@@ -49,6 +49,7 @@ export default function Table({ leaderboardData }) {
               <>
                 <td>{renderMinterName(item.minter)}</td>
                 <td style={{ textAlign: "right" }}>{item.numberOfMints}</td>
+                <td style={{ textAlign: "right" }}>{item.volume}</td>
                 <td style={{ textAlign: "right" }}>
                   {item.referrals === 0 || item.referrals
                     ? item.referrals
@@ -81,6 +82,10 @@ export default function Table({ leaderboardData }) {
         <tr>
           <th style={{ textAlign: "left" }}>Minter</th>
           <th style={{ textAlign: "right" }}>Number of Mints</th>
+          {platform === "sound" ? (
+            <th style={{ textAlign: "right" }}>Volume</th>
+          ) : null}
+
           <th style={{ textAlign: "right" }}>Referrals</th>
 
           <th style={{ textAlign: "right" }}>Score</th>
