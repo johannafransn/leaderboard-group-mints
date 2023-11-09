@@ -58,9 +58,7 @@ export default function Table({ leaderboardData }) {
                     ? item.referrals
                     : "?"}
                 </td>
-                <td style={{ textAlign: "right" }}>
-                  {item.score.toString().slice(0, 3)}
-                </td>
+                <td style={{ textAlign: "right" }}>{item.score.toString()}</td>
               </>
             )}
           </tr>
