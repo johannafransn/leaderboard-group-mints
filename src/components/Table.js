@@ -53,12 +53,8 @@ export default function Table({ leaderboardData }) {
                   <td style={{ textAlign: "right" }}>{item.volume}</td>
                 ) : null}
 
-                <td style={{ textAlign: "right" }}>
-                  {item.referrals === 0 || item.referrals
-                    ? item.referrals
-                    : "?"}
-                </td>
-                <td style={{ textAlign: "right" }}>{item.score.toString()}</td>
+                <td style={{ textAlign: "right" }}>{item.referrals}</td>
+                <td style={{ textAlign: "right" }}>{item.score}</td>
               </>
             )}
           </tr>
