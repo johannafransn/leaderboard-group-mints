@@ -37,6 +37,12 @@ export default function Home({ propsHere }) {
                 <div className="flexDirectionRow justify-center mb-3">
                   <a
                     className="btn btn-primary  homeBtnGroup"
+                    href="/#/prohobition/0x47a91457a3a1f700097199fd63c039c4784384ab/bu/prohobition"
+                  >
+                    'Buitrago's Honey Pot' on Arbitrum
+                  </a>
+                  <a
+                    className="btn btn-primary  homeBtnGroup"
                     href="/#/contract/0x9f3303e2c04e79387c3b5089b8a73e0b466e9076/Honey/sound"
                   >
                     'Honey' on Optimism

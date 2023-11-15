@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function useGetSoundLeaderboard(contractAddress, platform) {
+export function useGetLeaderboard(contractAddress, platform) {
   const [leaderboardData, setLeaderboardData] = useState(null);
   const [loading, setLoading] = useState(false);
 
@@ -17,7 +17,7 @@ export function useGetSoundLeaderboard(contractAddress, platform) {
           setLoading(false);
         }
       } catch (error) {
-        console.log(error, "Error fetching my groups");
+        console.log(error, "Error fetching leaderboard");
       }
     };
     fetchGroups();
@@ -25,4 +25,4 @@ export function useGetSoundLeaderboard(contractAddress, platform) {
   return { leaderboardData, loading };
 }
 
-export default useGetSoundLeaderboard;
+export default useGetLeaderboard;
