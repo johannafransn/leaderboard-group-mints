@@ -64,8 +64,8 @@ export default function ProhobitionTable({ leaderboardData }) {
       <thead>
         <tr>
           <th style={{ textAlign: "left" }}>Minter</th>
-          <th style={{ textAlign: "right" }}>Homage Minter?</th>
-          <th style={{ textAlign: "right" }}>Number of Mints</th>
+          <th style={{ textAlign: "right" }}>Homage To Life Minter?</th>
+          <th style={{ textAlign: "right" }}># of mints (Nov 15 - Dec 2)</th>
         </tr>
       </thead>
       <tbody>{_renderRows()}</tbody>
